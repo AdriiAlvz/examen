@@ -10,28 +10,27 @@ package git_hub;
  * @author Alumno
  */
 public class persona {
-
-String numero de telefono;
+int numeroDeTelefono;
 public Persona(String numeroDeTelefono) {
     
 super();
 this.numeroDeTelefono= numeroDeTelefono;
 
 }
-public String getNumeroDeTelefono(){
+public int getNumeroDeTelefono(){
     return numeroDeTelefono;
 }
-public void setNumeroDeTelefono(String numeroDeTelefono) {
+public void setNumeroDeTelefono(int numeroDeTelefono) {
     this.numeroDeTelefono= numeroDeTelefono;
 }
 }
     public class Profesor extends Persona {
         String srt;
         int edad;
-        String numeroDeTelefono;
+        int numeroDeTelefono;
         List<prestamo> prestamos;
         
-        public Profesor (String numeroDeTelefono) {
+        public Profesor (int numeroDeTelefono) {
             super (numeroDeTelefono);
         }
         public void printInformacionPersonal() {
